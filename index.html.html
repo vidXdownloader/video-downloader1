@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-in-One Video Downloader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+    .container {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 500px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      background: #38bdf8;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Video Downloader</h1>
+  <div class="container">
+    <input type="text" id="videoLink" placeholder="Paste video link here..." />
+    <button onclick="downloadPinterest()">Download Pinterest Video</button>
+    <button onclick="downloadFacebook()">Download Facebook Video</button>
+    <button onclick="downloadYouTubeShort()">Download YouTube Short</button>
+  </div>
+
+  <script>
+    function downloadPinterest() {
+      const url = document.getElementById('videoLink').value;
+      alert("Pinterest Downloader logic goes here for: " + url);
+    }
+
+    function downloadFacebook() {
+      const url = document.getElementById('videoLink').value;
+      alert("Facebook Downloader logic goes here for: " + url);
+    }
+
+    function downloadYouTubeShort() {
+      const url = document.getElementById('videoLink').value;
+      alert("YouTube Shorts Downloader logic goes here for: " + url);
+    }
+  </script>
+</body>
+</html>
